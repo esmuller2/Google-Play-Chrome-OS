@@ -1,3 +1,25 @@
 1. Utworzenie rozruchowego dysku USB
   - Dysk USB powinien mieć pojemność większą od 16GB
-  -  
+  -  Chromebook Recovery Utility (Chrome extension):
+        * Zainstalować
+        * Uruchom → „Użyj obrazu lokalnego” → wskaż plik .bin lub .img → postępuj zgodnie z instrukcjami → utwórz USB.
+
+2. Instalacja ChromeOS (nieoficjalne) na PC
+  - Uruchom ponownie i BIOS
+      * Po włączeniu zasilania naciśnij klawisz F2, F12, Del lub Esc.
+      * Wyłącz Bezpieczny rozruch.
+      * Zapisz zmiany.
+  - Wybierz opcję Rozruch USB
+      * Włóż USB z ChromeOS.
+      * Wybierz je jako urządzenie rozruchowe.
+  - Otwórz Terminal
+      * Po uruchomieniu ChromeOS z USB naciśnij Ctrl + Alt + T.
+  - Zainstalować
+      * Zidentyfikuj swój dysk (np. /dev/sda lub /dev/nvme0n1).
+      * Komenda:         sudo chromeos-install --dst /dev/[TwójDysk]
+  - Poczekać na instalację i podążac za wskazówkami wyświetlanymi na ekranie. Po zakończeniu instalacji należy uruchomić ponownie komputer
+
+3. Sprawdź Sklep Play
+Jeśli wszystko poszło dobrze, a pobrany obraz zawiera podsystem Androida, w Ustawieniach zobaczysz Sklep Play.
+Zaloguj się, zaakceptuj Regulamin i spróbuj zainstalować aplikacje na Androida.
+Wyniki są różne; niektóre urządzenia mogą nie mieć wszystkich sterowników lub funkcji sprzętowych.
